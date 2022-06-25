@@ -1,0 +1,68 @@
+header {
+    background: rgba(0, 0, 0, 0.5) url('/assets/images/banner-4.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 20px 0px;
+    position: relative;
+    background-blend-mode: overlay;
+}
+
+header .container,
+header .searchBox {
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header .container {
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+header .searchBox {
+    margin-top: 50px;
+    justify-content: center;
+}
+
+header .container .menu {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    list-style: none;
+    display: inline;
+    padding: 5px 10px;
+    align-self: center;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all ease 0.2s;
+}
+
+header ul li:hover a {
+    color: #6787FE;
+}
+
+header .container .loginButton {
+    background-color: transparent;
+    border-radius: 50px;
+    border: solid 2px #fff;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 16px;
+    transition: all ease 0.2s;
+}
+
+header .container .loginButton:hover {
+    background-color: #6787FE;
+}

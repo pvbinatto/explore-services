@@ -1,0 +1,47 @@
+section.banner {
+    max-width: 915px;
+}
+.searchBox h1 {
+    font-size: 58px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #fff;
+    text-align: center;
+}
+.searchBox p {
+    font-size: 18px;
+    line-height: 34px;
+    margin-bottom: 0;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+}
+
+section .boxSearchComponent {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0 100px 0;
+}
+
+section .boxSearchComponent input, select {
+    padding: 15px;
+    border: solid 1px #ccc;
+    border-radius: 50px;
+    font-size: 18px;
+    width: 100%;
+    margin-right: 10px;
+    outline: none;
+}
+
+section .boxSearchComponent button {
+    padding: 15px;
+    border-radius: 50px;
+    background: linear-gradient(#6787FE, #6787FE);
+    border: solid 1px #6787FE;
+    color: #fff;
+    font-size: 18px;
+    width: 150px;
+}

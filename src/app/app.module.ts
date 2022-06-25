@@ -3,9 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { MenuComponent } from './components/header/menu/menu.component';
-import { LogoComponent } from './components/header/logo/logo.component';
+import { HeaderComponent } from './components/header/home/header.component';
 import { SearchComponent } from './components/header/search/search.component';
 import { HomeComponent } from './components/home/home.component';
 import { PartnersComponent } from './components/home/partners/partners.component';
@@ -31,8 +29,6 @@ import { LayoutComponent } from './components/layout/layout.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    MenuComponent,
-    LogoComponent,
     SearchComponent,
     HomeComponent,
     PartnersComponent,
