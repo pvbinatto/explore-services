@@ -18,8 +18,11 @@ header .searchBox {
 
 header .container {
     height: 80px;
+    margin: 0 auto;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
 }
 header .searchBox {
     margin-top: 50px;
@@ -61,8 +64,31 @@ header .container .loginButton {
     padding: 10px 30px;
     font-size: 16px;
     transition: all ease 0.2s;
+    text-decoration: none;
 }
 
 header .container .loginButton:hover {
     background-color: #6787FE;
+}
+
+.menu-white {
+    background-color: #fff;
+    transition: all ease 0.2s;
+    /* position: fixed;
+    top: 0; */
+
+}
+.menu-white .menu .menu-internal ul li a {
+    color: #6787FE!important;
+}
+.menu-white .loginButton {
+    border: solid 2px #6787FE!important;
+    color: #6787FE!important;
+}
+.menu-white .loginButton:hover {
+    color: #fff!important;
+}
+
+.menu-white .logo img {
+    max-width: 200px;
 }

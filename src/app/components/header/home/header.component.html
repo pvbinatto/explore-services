@@ -1,14 +1,16 @@
 <header>
-  <div class="container">
+  <div class="container" [ngClass]="completo ? 'menu-transparent' : 'menu-white'">
     <div class="logo">
-      <img src="assets/images/logo-alt.png" alt="Logo" />
+      <img [src]="logo" alt="Logo" />
     </div>
     <div class="menu">
-      <ul>
-        <li><a href="">Início</a></li>
-        <li><a href="">Sobre Nós</a></li>
-        <li><a href="">Criar conta</a></li>
-      </ul>
+      <div class="menu-internal">
+        <ul>
+          <li><a href="">Início</a></li>
+          <li><a href="">Sobre Nós</a></li>
+          <li><a href="">Criar conta</a></li>
+        </ul>
+      </div>
     </div>
     <div class="buttonLogin">
       <div class="col-md-3"><a class="loginButton" href="">Login</a></div>

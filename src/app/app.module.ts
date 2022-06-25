@@ -48,7 +48,7 @@ import { LayoutComponent } from './components/layout/layout.component';
     BodyComponent,
     FaqComponent,
     LoginComponent,
-    LayoutComponent
+    LayoutComponent,
   ],
   imports: [
     BrowserModule,
