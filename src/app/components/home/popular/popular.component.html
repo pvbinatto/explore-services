@@ -1,1 +1,25 @@
-<p>popular works!</p>
+<section class="popular-services">
+  <div class="container">
+    <h2 class="titleSection">Serviços em Destaque</h2>
+    <div class="featured">
+      <div class="featured-item" *ngFor="let feature of featured">
+        <div class="feature-item-images">
+          <div class="feature-item-images-single">
+            <img
+              *ngFor="let image of feature.images"
+              [src]="'assets/images/services/' + image"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="featured-body">
+          <div class="feature-item-title">
+            {{feature.name}}
+          </div>
+          <div class="feature-item-category"></div>
+          <div class="feature-item-tags"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

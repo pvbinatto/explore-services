@@ -5,14 +5,15 @@ header {
     -o-background-size: cover;
     background-size: cover;
     padding: 20px 0px;
-    position: relative;
     background-blend-mode: overlay;
 }
+header .control-menu {
+    max-width: 1280px;
+    margin: 0 auto;
+}
 
-header .container,
 header .searchBox {
     display: flex;
-    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -21,8 +22,6 @@ header .container {
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
-    top: 0;
 }
 header .searchBox {
     margin-top: 50px;
@@ -74,9 +73,6 @@ header .container .loginButton:hover {
 .menu-white {
     background-color: #fff;
     transition: all ease 0.2s;
-    /* position: fixed;
-    top: 0; */
-
 }
 .menu-white .menu .menu-internal ul li a {
     color: #6787FE!important;

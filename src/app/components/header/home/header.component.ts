@@ -30,7 +30,6 @@ export class HeaderComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event']) onScrollEvent(event: any){
     this.verificaAlturaDaTela(window.scrollY);
-    console.log(this.logo);
   } 
 
 }
