@@ -25,6 +25,7 @@ import { SidebarLeftComponent } from './components/service/search/sidebar-left/s
 import { BodyComponent } from './components/service/search/body/body.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { LoginComponent } from './components/account/login/login.component';
+import { LayoutComponent } from './components/layout/layout.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { LoginComponent } from './components/account/login/login.component';
     SidebarLeftComponent,
     BodyComponent,
     FaqComponent,
-    LoginComponent
+    LoginComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
