@@ -4,9 +4,18 @@ header {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding: 20px 0px;
+    padding: 0px 0px;
     background-blend-mode: overlay;
 }
+
+.menu-mobile {
+    display: none;
+}
+
+header nav .navbar-brand img {
+    max-width: 200px;
+}
+
 header .control-menu {
     max-width: 1280px;
     margin: 0 auto;
@@ -23,9 +32,12 @@ header .container {
     align-items: center;
     justify-content: space-between;
 }
+
 header .searchBox {
     margin-top: 50px;
     justify-content: center;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 header .container .menu {
@@ -38,14 +50,14 @@ header ul {
     padding: 0;
 }
 
-header ul li {
+header .menu ul li {
     list-style: none;
     display: inline;
     padding: 5px 10px;
     align-self: center;
 }
 
-header ul li a {
+header .menu ul li a {
     color: #fff;
     text-decoration: none;
     transition: all ease 0.2s;
@@ -55,7 +67,11 @@ header ul li:hover a {
     color: #6787FE;
 }
 
-header .container .loginButton {
+.navbar-nav {
+    align-items: center;
+}
+
+.nav-item button {
     background-color: transparent;
     border-radius: 50px;
     border: solid 2px #fff;
@@ -64,9 +80,10 @@ header .container .loginButton {
     font-size: 16px;
     transition: all ease 0.2s;
     text-decoration: none;
+    margin-left: 30px;
 }
 
-header .container .loginButton:hover {
+.nav-item button:hover {
     background-color: #6787FE;
 }
 
@@ -74,17 +91,134 @@ header .container .loginButton:hover {
     background-color: #fff;
     transition: all ease 0.2s;
 }
+
 .menu-white .menu .menu-internal ul li a {
-    color: #6787FE!important;
+    color: #6787FE !important;
 }
-.menu-white .loginButton {
-    border: solid 2px #6787FE!important;
-    color: #6787FE!important;
-}
+
 .menu-white .loginButton:hover {
-    color: #fff!important;
+    color: #fff !important;
 }
 
 .menu-white .logo img {
     max-width: 200px;
+}
+
+.menu-drawer {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999999;
+    transition: ease all 0.5s;
+    animation-direction: alternate;
+}
+
+.menu-drawer.open,
+.menu-drawer.open>.mobile-nav {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
+.menu-drawer .mobile-nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    background: #fff;
+    padding: 0;
+    z-index: 5;
+    opacity: 1;
+    visibility: hidden;
+    border-radius: 0;
+    -webkit-transform: translateX(101%);
+    -ms-transform: translateX(101%);
+    transform: translateX(101%);
+}
+
+.menu-drawer-overlay {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, .9);
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
+.menu-drawer .menu-drawer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.menu-drawer .logo img {
+    max-width: 200px;
+}
+
+.profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #d7d7d7;
+    padding-top: 10px;
+    border-top: solid 1px #d7d7d7;
+}
+
+.profile .profile-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-position: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-size: cover;
+}
+
+.profile .profile-name {
+    font-size: 20px;
+}
+
+.profile .profile-link-perfil {
+    color: #606770;
+    font-size: 14px;
+}
+
+.nav-menu-mobile {
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.nav-menu-mobile ul li {
+    padding: 10px 25px;
+}
+
+.nav-menu-mobile ul li a {
+    font-size: 18px;
+}
+
+.nav-item a {
+    color: #fff;
+}
+
+@media (max-width: 760px) {
+    .menu-mobile {
+        display: block;
+    }
 }

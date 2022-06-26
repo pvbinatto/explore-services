@@ -1,23 +1,57 @@
 <section class="popular-services">
   <div class="container">
     <h2 class="titleSection">Serviços em Destaque</h2>
-    <div class="featured">
-      <div class="featured-item" *ngFor="let feature of featured">
-        <div class="feature-item-images">
-          <div class="feature-item-images-single">
-            <img
-              *ngFor="let image of feature.images"
-              [src]="'assets/images/services/' + image"
-              alt=""
-            />
+
+    <div class="featured row">
+      <div
+        class="col-md-4 featured-item"
+        *ngFor="let feature of featured; let x = index"
+      >
+        <div
+          id="carousel-{{ x }}"
+          class="carousel slide"
+          data-interval="false"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              *ngFor="let image of feature.images; let d = index"
+              data-target="#carousel-{{ x }}"
+              [attr.data-target]="'#carousel-' + x"
+              [attr.data-slide-to]="d"
+              [ngClass]="d === 0 ? 'active' : ''"
+            ></li>
+          </ol>
+          <div class="carousel-inner">
+            <div
+              *ngFor="let image of feature.images; let i = index"
+              [ngClass]="i === 0 ? 'carousel-item active' : 'carousel-item '"
+            >
+              <img [src]="'assets/images/services/' + image" alt="" />
+            </div>
           </div>
         </div>
         <div class="featured-body">
-          <div class="feature-item-title">
-            {{feature.name}}
+          <i [ngClass]="feature.liked === 1 ? 'heart bi bi-heart-fill' : 'heart bi bi-heart'"></i>
+          <h3>{{ feature.name }}</h3>
+          <p>Categoria: {{ feature.category }}</p>
+          <div class="tags">
+            <span
+              class="badge badge-primary"
+              *ngFor="let tag of feature.tags"
+              >{{ tag }}</span
+            >
           </div>
-          <div class="feature-item-category"></div>
-          <div class="feature-item-tags"></div>
+          <hr />
+          
+          <div class="avaliacao">
+            <span>Avaliação: </span>
+            <div class="stars" *ngFor="let rate of [].constructor(5); let i = index">
+                <i [ngClass]="i + 1 <= feature.rating ? 'bi bi-star-fill': 'bi bi-star'"></i>
+            </div> 
+            <span class="qtd-rating">({{feature.rating}})</span>
+          </div>
+          
         </div>
       </div>
     </div>

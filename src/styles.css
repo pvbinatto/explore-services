@@ -1,4 +1,4 @@
-/* @import '~bootstrap/dist/css/bootstrap.min.css'; */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: aqua;
+    background-color: #f8fafb;
 }
 .container {
     max-width: 1280px;
