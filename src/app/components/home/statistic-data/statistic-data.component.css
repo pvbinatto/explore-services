@@ -62,12 +62,21 @@
 @media (max-width: 760px){
     .call-to-action-sign-up {
         display: block;
+        text-align: center;
+        padding: 20px;
+    }
+    .call-to-action-sign-up .call-to-action-left-side h2 {
+        font-size: 18px;
+    }
+    .call-to-action-sign-up .call-to-action-left-side p {
+        font-size: 15px;
     }
     .call-to-action-sign-up .call-to-action-right-side img {
         display: none;
     }
     .call-to-action-sign-up .call-to-action-right-side {
         width: 100%;
+        
     }
     .call-to-action-sign-up .call-to-action-left-side button {
         width: 100%;

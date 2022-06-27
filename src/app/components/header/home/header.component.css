@@ -33,13 +33,6 @@ header .container {
     justify-content: space-between;
 }
 
-header .searchBox {
-    margin-top: 50px;
-    justify-content: center;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
 header .container .menu {
     margin-left: auto;
     margin-right: 20px;
@@ -215,6 +208,11 @@ header ul li:hover a {
 
 .nav-item a {
     color: #fff;
+}
+
+.navbar-light .navbar-toggler i {
+    color: #fff;
+    border-color: rgba(0, 0, 0, .1);
 }
 
 @media (max-width: 760px) {

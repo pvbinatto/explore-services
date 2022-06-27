@@ -1,6 +1,18 @@
 section.banner {
-    max-width: 915px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
 }
+section .searchBox {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 50px;
+    
+}
+
+
+
 .searchBox h1 {
     font-size: 58px;
     font-weight: 700;
@@ -8,6 +20,7 @@ section.banner {
     color: #fff;
     text-align: center;
 }
+
 .searchBox p {
     font-size: 18px;
     line-height: 34px;
@@ -24,9 +37,11 @@ section .boxSearchComponent {
     display: flex;
     justify-content: space-between;
     margin: 25px 0 100px 0;
+    width: 70%;
 }
 
-section .boxSearchComponent input, select {
+section .boxSearchComponent input,
+select {
     padding: 15px;
     border: solid 1px #ccc;
     border-radius: 50px;
@@ -47,22 +62,35 @@ section .boxSearchComponent button {
 }
 
 @media (max-width: 760px) {
-    .searchBox h1 {
-        font-size: 30px;
+    section .searchBox {
+        margin-top: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
     }
+
+    .searchBox h1 {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
     .searchBox p {
         font-size: 16px;
     }
+
     section .boxSearchComponent {
         padding: 15px;
         flex-direction: column;
         border-radius: 20px;
         margin: 25px 10px 50px 10px;
+        width: 95%;
     }
-    section .boxSearchComponent input, select {
+
+    section .boxSearchComponent input,
+    select {
         width: 100%;
         margin-bottom: 10px;
     }
+
     section .boxSearchComponent button {
         width: 100%;
     }
