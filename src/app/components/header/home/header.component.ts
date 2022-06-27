@@ -10,7 +10,7 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   completo = true;
-  logo = "assets/images/logo.png";
+  logo = "assets/images/logo-alt.png";
 
   toggle = false;
 

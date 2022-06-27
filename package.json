@@ -1,6 +1,7 @@
 {
   "name": "explore-services",
   "version": "0.0.0",
+  "homepage": "https://pvbinatto.github.io/explore-services/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,7 +10,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress:run": "cypress run",
+    "deploy": "gh-pages -d buildn"
   },
   "private": true,
   "dependencies": {
