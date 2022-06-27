@@ -7,7 +7,6 @@ import { HeaderComponent } from './components/header/home/header.component';
 import { SearchComponent } from './components/header/search/search.component';
 import { HomeComponent } from './components/home/home.component';
 import { PartnersComponent } from './components/home/partners/partners.component';
-import { HowComponent } from './components/home/how/how.component';
 import { PopularComponent } from './components/home/popular/popular.component';
 import { StatisticDataComponent } from './components/home/statistic-data/statistic-data.component';
 import { BannerAddServiceComponent } from './components/home/banner-add-service/banner-add-service.component';
@@ -24,6 +23,7 @@ import { BodyComponent } from './components/service/search/body/body.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { LoginComponent } from './components/account/login/login.component';
 import { LayoutComponent } from './components/layout/layout.component';
+import { SectionIconsComponent } from './components/home/section-icons/section-icons.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +32,6 @@ import { LayoutComponent } from './components/layout/layout.component';
     SearchComponent,
     HomeComponent,
     PartnersComponent,
-    HowComponent,
     PopularComponent,
     StatisticDataComponent,
     BannerAddServiceComponent,
@@ -49,6 +48,7 @@ import { LayoutComponent } from './components/layout/layout.component';
     FaqComponent,
     LoginComponent,
     LayoutComponent,
+    SectionIconsComponent
   ],
   imports: [
     BrowserModule,

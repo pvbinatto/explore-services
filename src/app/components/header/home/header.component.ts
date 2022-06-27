@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
   completo = true;
   logo = "assets/images/logo.png";
 
-  toggle = true;
+  toggle = false;
 
   toggleMobile(){
     console.log('aq')

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HowComponent } from './how.component';
+import { SectionIconsComponent } from './section-icons.component';
 
-describe('HowComponent', () => {
-  let component: HowComponent;
-  let fixture: ComponentFixture<HowComponent>;
+describe('SectionIconsComponent', () => {
+  let component: SectionIconsComponent;
+  let fixture: ComponentFixture<SectionIconsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HowComponent ]
+      declarations: [ SectionIconsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HowComponent);
+    fixture = TestBed.createComponent(SectionIconsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
